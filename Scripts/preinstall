@@ -1,0 +1,23 @@
+#!/bin/sh
+cd ~/Desktop
+mkdir DDBLocal_Scripts
+mv PortNumTmp.txt ./DDBLocal_Scripts/
+mv AWSConfigTmp.txt ./DDBLocal_Scripts/
+
+#Creating a readme file
+file3="README_DDBLocal.txt"
+echo "README" > $file3
+echo "=======\n" >> $file3
+echo "Thank you for downloading DynamoDB Local and NoSQL Workbench.\n\n" >> $file3
+echo "NoSQL Workbench has been installed in the Applications directory on your machine.\n" >> $file3
+echo "DynamoDB Local resources have been placed on the Desktop directory of your machine.\n" >> $file3
+echo "The directory called DDBLocal contains the required resources to run the DDB Local Server. The directory called DDBLocal_Scripts contains additional shell scripts.\nDDBLocalStart is used to start the server, the specified port number variable as well as other command options can be configured there. Please note that the script uses the option --sharedDb by default, it can be removed by the user by editing the same script itself. This bash script provides a quick alternative way to start the server with just a click, it can also be started by manually using the commands as mentioned in the official documentation.\nThe DDBLocalKill script is used to shut any instances of DDBLocalStart that might be running. Lastly, DDBLocalUninstall deletes both the above mentioned folders.\n\n" >> $file3
+echo "The AWS credentials have been set as per the values entered during installation. They can be changed using the aws configure command. The user can also create a AWSConfigTmp.txt file inside the DDBLocal_Scripts directory. Please enter the configuration in the given order: Access Key ID, Secret Access Key, Region and Output format. Please note that all these 4 values must be in separate lines. The DDBLocalStart script will configure using this file when it's executed the next time, it will delete the txt file after the configuration.\n\n" >> $file3
+echo "Please note that there is a toggle button on NoSQL Workbench to execute the DDBLocalStart and DDBLocalKill scripts so that you can connect to the local server through the UI itself. It refers to both the scripts from the exact path they're installed in. Please do not delete or move them to avoid any issues while connecting to the server from Workbench.\n\n" >> $file3
+echo "To uninstall NoSQL Workbench, delete the NoSQL Workbench.app file. To uninstall DynamoDBLocal, run the DDBLocalUninstall script in the DDBLocal_Scripts Directory\n" >> $file3
+echo "\n" >> $file3
+
+mv $file3 ./DDBLocal_Scripts/
+chmod 777 ./DDBLocal_Scripts
+
+exit 0

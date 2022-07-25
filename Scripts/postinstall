@@ -1,0 +1,57 @@
+#!/bin/sh
+cd ~/Desktop
+
+#downloading DDB Local from the online documentation
+curl -O https://s3.us-west-2.amazonaws.com/dynamodb-local/dynamodb_local_latest.zip
+unzip dynamodb_local_latest.zip -d DDBLocal
+chmod -R 777 ./DDBLocal
+rm dynamodb_local_latest.zip
+
+#Read the port from the temp file 
+portnumtmp=`cat ./DDBLocal_Scripts/PortNumTmp.txt`
+rm ./DDBLocal_Scripts/PortNumTmp.txt
+
+#Creating file that starts ddb local server
+file="./DDBLocal_Scripts/DDBLocalStart"
+echo "#!/bin/sh" > $file
+echo "cd ~/Desktop/DDBLocal/" >> $file
+echo "#ONLY when running script for the first time:set AWS configuration using values entered in installer" >> $file
+echo 'if [ -f "../DDBLocal_Scripts/AWSConfigTmp.txt" ]; then' >> $file
+echo 'n=1\nwhile IFS= read -r "var$n"; do\n n=$((n + 1))' >> $file
+echo "done < ../DDBLocal_Scripts/AWSConfigTmp.txt" >> $file
+echo "aws configure set aws_access_key_id \$var1" >> $file
+echo "aws configure set aws_secret_access_key \$var2" >> $file
+echo "aws configure set default.output \$var3" >> $file
+echo "aws configure set default.region \$var4" >> $file
+echo "rm ../DDBLocal_Scripts/AWSConfigTmp.txt" >> $file
+echo "fi\n\n" >> $file
+
+echo "#can set port number here\nportnum=$portnumtmp">> $file
+echo "if lsof -Pi :\$portnum -sTCP:LISTEN -t >/dev/null ; then" >> $file
+echo 'echo "Either DynamoDB Local is already running on port $portnum or the port is in use by another process"' >> $file
+echo 'else\necho "Starting DynamoDB Local on port $portnum now..."' >> $file 
+echo "java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -help" >> $file 
+echo "java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -port \$portnum -sharedDb" >> $file 
+echo "fi\nexit 0" >> $file 
+chmod +x $file
+chmod 777 $file
+
+#Creating file that stops ddb local server
+file1="./DDBLocal_Scripts/DDBLocalKill"
+echo "#!/bin/sh" > $file1
+echo "pid=\$(ps ax | grep DDBLocalStart | sort | head -1 | awk '{print \$1}')" >> $file1
+echo "pkill -TERM -P \$pid" >> $file1
+chmod +x $file1
+chmod 777 $file1
+
+#Creating uninstaller to uninstall DDBLocal files and scripts
+file2="./DDBLocal_Scripts/DDBLocalUninstall"
+echo "#!/bin/sh" > $file2
+echo "cd ~/Desktop" >> $file2
+echo "rm -R DDBLocal_Scripts" >> $file2
+echo "rm -R DDBLocal" >> $file2
+chmod +x $file2
+chmod 777 $file2
+
+open -a TextEdit "./DDBLocal_Scripts/README_DDBLocal.txt"
+exit 0

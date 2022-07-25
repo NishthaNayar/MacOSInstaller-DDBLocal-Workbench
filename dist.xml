@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<installer-gui-script minSpecVersion="1">
+    <pkg-ref id="com.pkg.APPNAME"/>
+    <options customize="never" require-scripts="false" hostArchitectures="x86_64,arm64"/>
+<background file="background.png" alignment="bottomleft" mime-type="image/png" scaling="none" />
+    <welcome    file="welcome.html" mime-type="text/html" />
+    <choices-outline>
+        <line choice="default">
+            <line choice="com.pkg.APPNAME"/>
+        </line>
+    </choices-outline>
+    <choice id="default"/>
+    <choice id="com.pkg.APPNAME" visible="false">
+        <pkg-ref id="com.pkg.APPNAME"/>
+    </choice>
+    <pkg-ref id="com.pkg.APPNAME" version="0" onConclusion="none">WorkbenchDDBLocal.pkg</pkg-ref>
+</installer-gui-script>
