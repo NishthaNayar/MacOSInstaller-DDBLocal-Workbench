@@ -21,8 +21,8 @@ echo 'n=1\nwhile IFS= read -r "var$n"; do\n n=$((n + 1))' >> $file
 echo "done < ../DDBLocal_Scripts/AWSConfigTmp.txt" >> $file
 echo "aws configure set aws_access_key_id \$var1" >> $file
 echo "aws configure set aws_secret_access_key \$var2" >> $file
-echo "aws configure set default.output \$var3" >> $file
-echo "aws configure set default.region \$var4" >> $file
+echo "aws configure set default.region \$var3" >> $file
+echo "aws configure set default.output \$var4" >> $file
 echo "rm ../DDBLocal_Scripts/AWSConfigTmp.txt" >> $file
 echo "fi\n\n" >> $file
 
