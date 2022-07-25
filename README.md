@@ -1,0 +1,19 @@
+# MacOSInstaller-DDBLocal-Workbench
+This repo contains the files required to create a MacOS installer to setup NoSQL Workbench and DDB Local
+
+How to use it?
+Get the latest macOS binary for NoSQL Workbench using the electron-builder on the DataModeler project. Run the following commands to create the installer:
+
+pkgbuild --identifier com.pkg.APPNAME 
+--scripts MacOSInstaller-DDBLocal-Workbench/Scripts 
+--install-location /Applications/ 
+--component /Applications/NoSQL\ Workbench.app 
+Desktop/WorkbenchDDBLocal.pkg
+
+productbuild --distribution MacOSInstaller-DDBLocal-Workbench/dist.xml 
+--package-path Desktop --plugins MacOSInstaller-DDBLocal-Workbench/Plugins 
+--resources MacOSInstaller-DDBLocal-Workbench/resourcesInstaller 
+Desktop/NoSQLWorkbench_DDBLocal.pkg
+
+For more detailed steps, view this documentation: https://quip-amazon.com/gPlMAYKu4vMH/Single-Installable-Suite-NoSQL-Workbench-DDB-Local
+
