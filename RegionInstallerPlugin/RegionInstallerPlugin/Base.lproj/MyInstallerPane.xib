@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="20037" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="20037"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="InstallerSection">
+            <connections>
+                <outlet property="firstPane" destination="Qsn-FY-4qK" id="Dhh-1H-QYh"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Qsn-FY-4qK" customClass="MyInstallerPane">
+            <connections>
+                <outlet property="contentView" destination="TUK-W2-vig" id="gTd-A7-dof"/>
+                <outlet property="firstKeyView" destination="21s-me-O36" id="h9R-ji-a7U"/>
+                <outlet property="initialKeyView" destination="21s-me-O36" id="0ll-W1-Zo0"/>
+                <outlet property="lastKeyView" destination="21s-me-O36" id="Pd3-6s-06J"/>
+                <outlet property="parentSection" destination="-2" id="FB7-UV-e8k"/>
+                <outlet property="uiRegion" destination="21s-me-O36" id="y0L-X4-d1C"/>
+            </connections>
+        </customObject>
+        <customView id="TUK-W2-vig" userLabel="View">
+            <rect key="frame" x="0.0" y="0.0" width="418" height="330"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N4u-Qy-zZK">
+                    <rect key="frame" x="26" y="262" width="384" height="32"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Please select the region you want to download the resources for DynamoDB Local from:" id="Dxk-iQ-t1E">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="21s-me-O36">
+                    <rect key="frame" x="74" y="199" width="290" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <popUpButtonCell key="cell" type="push" title="Asia Pacific (Mumbai) Region" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="c3d-SR-ULU" id="fab-Ow-7hb">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="menu"/>
+                        <menu key="menu" id="NFD-kP-Imn">
+                            <items>
+                                <menuItem title="Asia Pacific (Mumbai) Region" state="on" id="c3d-SR-ULU"/>
+                                <menuItem title="Asia Pacific (Singapore) Region" id="xkq-t3-Hcd"/>
+                                <menuItem title="Asia Pacific (Tokyo) Region" id="RJQ-Cp-cy8"/>
+                                <menuItem title="Europe (Frankfurt) Region" id="f9f-ae-n3a"/>
+                                <menuItem title="South America (São Paulo) Region" id="HIr-p5-tgn"/>
+                                <menuItem title="US West (Oregon) Region" id="DE8-h4-oBo"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                </popUpButton>
+            </subviews>
+            <point key="canvasLocation" x="139" y="154"/>
+        </customView>
+    </objects>
+</document>

@@ -1,8 +1,24 @@
 #!/bin/sh
 cd ~/Desktop
 
+#Read region from temp file
+region=`cat ./RegionTmp.txt`
+rm ./RegionTmp.txt
+
 #downloading DDB Local from the online documentation
-curl -O https://s3.us-west-2.amazonaws.com/dynamodb-local/dynamodb_local_latest.zip
+if [ "$region" == "Asia Pacific (Mumbai) Region" ]; then
+	curl -O https://s3.ap-south-1.amazonaws.com/dynamodb-local-mumbai/dynamodb_local_latest.zip	
+elif [ "$region"  == "Asia Pacific (Singapore) Region" ]; then 
+        curl -O https://s3.ap-southeast-1.amazonaws.com/dynamodb-local-singapore/dynamodb_local_latest.zip
+elif [ "$region"  == "Asia Pacific (Tokyo) Region" ]; then 
+        curl -O https://s3.ap-northeast-1.amazonaws.com/dynamodb-local-tokyo/dynamodb_local_latest.zip
+elif [ "$region"  == "Europe (Frankfurt) Region" ]; then 
+        curl -O https://s3.eu-central-1.amazonaws.com/dynamodb-local-frankfurt/dynamodb_local_latest.zip
+elif [ "$region"  == "South America (São Paulo) Region" ]; then 
+        curl -O https://s3.sa-east-1.amazonaws.com/dynamodb-local-sao-paulo/dynamodb_local_latest.zip
+elif [ "$region"  == "US West (Oregon) Region" ]; then 
+        curl -O https://s3.us-west-2.amazonaws.com/dynamodb-local/dynamodb_local_latest.zip	
+fi
 unzip dynamodb_local_latest.zip -d DDBLocal
 chmod -R 777 ./DDBLocal
 rm dynamodb_local_latest.zip
@@ -53,5 +69,17 @@ echo "rm -R DDBLocal" >> $file2
 chmod +x $file2
 chmod 777 $file2
 
+#Creating uninstaller to uninstall DDBLocal files and scripts and Workbench
+file3="./DDBLocal_Scripts/DDBLocal&WorkbenchUninstall"
+echo "#!/bin/sh" > $file3
+echo "cd ~/Desktop" >> $file3
+echo "rm -R DDBLocal_Scripts" >> $file3
+echo "rm -R DDBLocal" >> $file3
+echo "cd .." >>  $file3
+echo "sudo rm -R /Applications/NoSQL\ Workbench.app" >> $file3 
+chmod +x $file3
+chmod 777 $file3
+
+chmod 777 ./DDBLocal_Scripts/README_DDBLocal.txt
 open -a TextEdit "./DDBLocal_Scripts/README_DDBLocal.txt"
 exit 0

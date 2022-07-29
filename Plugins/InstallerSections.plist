@@ -7,6 +7,7 @@
 		<string>Introduction</string>
 		<string>ReadMe</string>
 		<string>License</string>
+		<string>RegionInstallerPlugin.bundle</string>
 		<string>AWSConfigureInstallerPlugin.bundle</string>	
 		<string>DDBLocalPortPlugin.bundle</string>	
 		<string>Target</string>

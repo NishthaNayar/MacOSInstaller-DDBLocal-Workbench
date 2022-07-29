@@ -15,6 +15,7 @@
         <customObject id="Qsn-FY-4qK" customClass="MyInstallerPane">
             <connections>
                 <outlet property="contentView" destination="TUK-W2-vig" id="gTd-A7-dof"/>
+                <outlet property="firstKeyView" destination="dmd-zu-fWY" id="zY0-ph-M2j"/>
                 <outlet property="initialKeyView" destination="dmd-zu-fWY" id="4ff-cx-9Kt"/>
                 <outlet property="lastKeyView" destination="7jc-g6-Y41" id="BlO-bP-JsO"/>
                 <outlet property="parentSection" destination="-2" id="FB7-UV-e8k"/>

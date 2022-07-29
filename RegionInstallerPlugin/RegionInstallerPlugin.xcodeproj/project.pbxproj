@@ -1,0 +1,347 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		82C20F38289341DC0059CBD8 /* MyInstallerPane.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C20F37289341DC0059CBD8 /* MyInstallerPane.m */; };
+		82C20F3B289341DC0059CBD8 /* MyInstallerPane.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82C20F39289341DC0059CBD8 /* MyInstallerPane.xib */; };
+		82C20F3E289341DC0059CBD8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 82C20F3C289341DC0059CBD8 /* Localizable.strings */; };
+		82C20F40289341DC0059CBD8 /* InstallerSections.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82C20F3F289341DC0059CBD8 /* InstallerSections.plist */; };
+		82C20F44289341DC0059CBD8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 82C20F42289341DC0059CBD8 /* InfoPlist.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		82C20F33289341DC0059CBD8 /* RegionInstallerPlugin.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RegionInstallerPlugin.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		82C20F36289341DC0059CBD8 /* MyInstallerPane.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyInstallerPane.h; sourceTree = "<group>"; };
+		82C20F37289341DC0059CBD8 /* MyInstallerPane.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyInstallerPane.m; sourceTree = "<group>"; };
+		82C20F3A289341DC0059CBD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MyInstallerPane.xib; sourceTree = "<group>"; };
+		82C20F3D289341DC0059CBD8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		82C20F3F289341DC0059CBD8 /* InstallerSections.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = InstallerSections.plist; sourceTree = "<group>"; };
+		82C20F41289341DC0059CBD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82C20F43289341DC0059CBD8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		82C20F30289341DC0059CBD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		82C20F2A289341DC0059CBD8 = {
+			isa = PBXGroup;
+			children = (
+				82C20F35289341DC0059CBD8 /* RegionInstallerPlugin */,
+				82C20F34289341DC0059CBD8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		82C20F34289341DC0059CBD8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				82C20F33289341DC0059CBD8 /* RegionInstallerPlugin.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		82C20F35289341DC0059CBD8 /* RegionInstallerPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				82C20F36289341DC0059CBD8 /* MyInstallerPane.h */,
+				82C20F37289341DC0059CBD8 /* MyInstallerPane.m */,
+				82C20F39289341DC0059CBD8 /* MyInstallerPane.xib */,
+				82C20F3C289341DC0059CBD8 /* Localizable.strings */,
+				82C20F3F289341DC0059CBD8 /* InstallerSections.plist */,
+				82C20F41289341DC0059CBD8 /* Info.plist */,
+				82C20F42289341DC0059CBD8 /* InfoPlist.strings */,
+			);
+			path = RegionInstallerPlugin;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		82C20F32289341DC0059CBD8 /* RegionInstallerPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82C20F47289341DC0059CBD8 /* Build configuration list for PBXNativeTarget "RegionInstallerPlugin" */;
+			buildPhases = (
+				82C20F2F289341DC0059CBD8 /* Sources */,
+				82C20F30289341DC0059CBD8 /* Frameworks */,
+				82C20F31289341DC0059CBD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RegionInstallerPlugin;
+			productName = RegionInstallerPlugin;
+			productReference = 82C20F33289341DC0059CBD8 /* RegionInstallerPlugin.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		82C20F2B289341DC0059CBD8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					82C20F32289341DC0059CBD8 = {
+						CreatedOnToolsVersion = 13.4;
+					};
+				};
+			};
+			buildConfigurationList = 82C20F2E289341DC0059CBD8 /* Build configuration list for PBXProject "RegionInstallerPlugin" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 82C20F2A289341DC0059CBD8;
+			productRefGroup = 82C20F34289341DC0059CBD8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				82C20F32289341DC0059CBD8 /* RegionInstallerPlugin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		82C20F31289341DC0059CBD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82C20F3B289341DC0059CBD8 /* MyInstallerPane.xib in Resources */,
+				82C20F44289341DC0059CBD8 /* InfoPlist.strings in Resources */,
+				82C20F3E289341DC0059CBD8 /* Localizable.strings in Resources */,
+				82C20F40289341DC0059CBD8 /* InstallerSections.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		82C20F2F289341DC0059CBD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82C20F38289341DC0059CBD8 /* MyInstallerPane.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		82C20F39289341DC0059CBD8 /* MyInstallerPane.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82C20F3A289341DC0059CBD8 /* Base */,
+			);
+			name = MyInstallerPane.xib;
+			sourceTree = "<group>";
+		};
+		82C20F3C289341DC0059CBD8 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82C20F3D289341DC0059CBD8 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		82C20F42289341DC0059CBD8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82C20F43289341DC0059CBD8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		82C20F45289341DC0059CBD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		82C20F46289341DC0059CBD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		82C20F48289341DC0059CBD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RegionInstallerPlugin/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MyInstallerPane;
+				INFOPLIST_KEY_NSPrincipalClass = InstallerSection;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = aws.RegionInstallerPlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		82C20F49289341DC0059CBD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RegionInstallerPlugin/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MyInstallerPane;
+				INFOPLIST_KEY_NSPrincipalClass = InstallerSection;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = aws.RegionInstallerPlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		82C20F2E289341DC0059CBD8 /* Build configuration list for PBXProject "RegionInstallerPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82C20F45289341DC0059CBD8 /* Debug */,
+				82C20F46289341DC0059CBD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82C20F47289341DC0059CBD8 /* Build configuration list for PBXNativeTarget "RegionInstallerPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82C20F48289341DC0059CBD8 /* Debug */,
+				82C20F49289341DC0059CBD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 82C20F2B289341DC0059CBD8 /* Project object */;
+}

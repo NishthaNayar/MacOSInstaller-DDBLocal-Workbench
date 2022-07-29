@@ -15,7 +15,9 @@
         <customObject id="Qsn-FY-4qK" customClass="MyInstallerPane">
             <connections>
                 <outlet property="contentView" destination="TUK-W2-vig" id="gTd-A7-dof"/>
-                <outlet property="initialKeyView" destination="r2U-DY-hPp" id="S1H-xT-jLf"/>
+                <outlet property="firstKeyView" destination="r2U-DY-hPp" id="dzV-1b-6TZ"/>
+                <outlet property="initialKeyView" destination="r2U-DY-hPp" id="TLP-lX-4Qa"/>
+                <outlet property="lastKeyView" destination="jl4-bL-seT" id="9M8-fW-mhw"/>
                 <outlet property="parentSection" destination="-2" id="FB7-UV-e8k"/>
                 <outlet property="uiPortNum" destination="r2U-DY-hPp" id="fVx-8j-Y8R"/>
             </connections>
